@@ -1,0 +1,9 @@
+{
+"TOTAL_MEMORY": 268435456,
+"dataUrl": "hotDogs.data.unityweb",
+"asmCodeUrl": "hotDogs.asm.code.unityweb",
+"asmMemoryUrl": "hotDogs.asm.memory.unityweb",
+"asmFrameworkUrl": "hotDogs.asm.framework.unityweb",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#222C36"
+}
