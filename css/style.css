@@ -201,6 +201,19 @@ button#trigger-overlay {
   background-position:center;
 }
 
+/* 
+.six-img {
+  background: url(../images/b6.jpg) no-repeat 0px 0px;
+  background-repeat:no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  background-position:center;
+}
+*/
+
+
 footer {
   height: 75px;
 }
