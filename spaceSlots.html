@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Space Odyssey</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
+    <title>Unity WebGL Player | Space Odyssey</title>
+    <link rel="shortcut icon" href="SpaceSlots/TemplateData/favicon.ico">
+    <link rel="stylesheet" href="SpaceSlots/TemplateData/style.css">
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
@@ -20,7 +20,7 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">MagusDuel</div>
+        <div id="unity-build-title">Space Odyssey</div>
       </div>
     </div>
     <script>
@@ -55,15 +55,15 @@
         updateBannerVisibility();
       }
 
-      var buildUrl = "Build";
+      var buildUrl = "SpaceSlots/Build";
       var loaderUrl = buildUrl + "/SpaceSlots_Build.loader.js";
       var config = {
-        dataUrl: buildUrl + "/SpaceSlots_Build.data.br",
-        frameworkUrl: buildUrl + "/SpaceSlots_Build.framework.js.br",
-        codeUrl: buildUrl + "/SpaceSlots_Build.wasm.br",
-        streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
-        productName: "MagusDuel",
+        dataUrl: buildUrl + "/SpaceSlots_Build.data",
+        frameworkUrl: buildUrl + "/SpaceSlots_Build.framework.js",
+        codeUrl: buildUrl + "/SpaceSlots_Build.wasm",
+        streamingAssetsUrl: "SpaceSlots/StreamingAssets",
+        companyName: "Stephen Roebuck",
+        productName: "Space Odyssey",
         productVersion: "1.0",
         showBanner: unityShowBanner,
       };
