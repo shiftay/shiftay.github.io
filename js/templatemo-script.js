@@ -68,24 +68,35 @@ const hexatownBG = ['hexatown-bg-1.jpg', 'hexatown-bg-2.jpg', 'hexatown-bg-3.jpg
 const extraBG = ['extra-bg-1.jpg', 'extra-bg-2.jpg', 'extra-bg-3.jpg'];
 
 
-const params = ['about', 'starquest', 'hexatown', 'spaceslots', 'extras' ];
+const divID = ['about', 'starquest', 'hexatown', 'spaceslots', 'extras' ];
+const buttonID = ['about_btn', 'starquest_btn', 'hexatown_btn', 'spaceslots_btn', 'extras_btn' ];
 const temp = [ aboutBG, starquestBG,  hexatownBG, spaceslotsBG, extraBG ];
 
 
 function ShowAndHide(id) {
 
-
     var x = -1;
-    
-    console.log("Hello!");
-
-    for(let i = 0; i < params.length; i++) {
-        if(id == params[i]) {
-            document.getElementById(params[i]).style.display = 'block';
+    for(let i = 0; i < divID.length; i++) {
+        if(id == divID[i]) {
+            document.getElementById(divID[i]).style.display = 'block';
             x = i;
         }
-        else document.getElementById(params[i]).style.display = 'none';
+        else document.getElementById(divID[i]).style.display = 'none';
     }
+
+
+    const bgControl = document.getElementsByClassName('nav-item active');
+    if(bgControl.length > 0) bgControl.item(0).classList.remove('active');
+    // bgControl.removeClass('active');
+    const current =  document.getElementsByClassName('nav-item');
+    console.log(current.length);
+
+    for(let i = 0; i < current.length; i++) {
+        if(current.item(i).id == buttonID[x]) current.item(i).classList.add('active');
+    }
+
+
+    // current.addClass('active'); 
 
     BGSetup(temp[x]);
 }
